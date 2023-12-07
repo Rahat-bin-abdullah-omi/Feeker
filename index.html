@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Black Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>This is the Feeker app. Click the button below to turn off the app.</h1>
+    <button id="turnOnButton" onclick="openFullscreenOverlay()">Turn On</button>
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <div class="warning-container">
+            <div class="warning-message">
+                <img src="images/face-icon.png" alt="Face Detected Icon" class="face-icon">
+                <h2>Face Detected!</h2>
+                <p>Screen protection!</p>
+            </div>
+        </div>
+        <button id="turnOffButton" onclick="closeFullscreenOverlay()">Turn Off</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
